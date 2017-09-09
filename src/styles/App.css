@@ -115,7 +115,6 @@
 .NavHeaderLink {
   font-family: 'AdventPro-ExtraLight';
   font-size: 18px;
-  color: gray;
   letter-spacing: 1px;
   margin-left: 30px;
 }
@@ -127,6 +126,18 @@
   -webkit-transition: color 0.8s;
   -moz-transition: color 0.8s;
   transition: color 0.8s;
+}
+
+.NavLink {
+  cursor: pointer;
+  text-decoration: none;
+  color: gray;
+}
+
+.NavLinkActive {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
 }
 
 .ShortIntro {
@@ -223,6 +234,77 @@
 
 .GridRow2 {
   display: none;
+}
+
+.NotFoundContainer {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  text-align: center;
+}
+
+.NotFoundLabel {
+  text-align: center;
+  font-family: 'Penna';
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 5px;
+}
+
+.About {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.AboutLeftContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutRightContainer {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.ProfileImageContainer {
+  flex: 1;
+  margin-top: 75px;
+}
+
+.ProfileImage {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.LogosImageContainer {
+  flex: 2;
+  flex-direction: column;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.LogosImageRow {
+  flex: 1;
+  flex-direction: row;
+}
+
+.Logo {
+  height: 35px;
+  width: 35px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.AboutText {
+  font-size: 18px;
+  color:gray;
 }
 
 @media only screen and (max-width: 450px) {
