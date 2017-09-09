@@ -15,6 +15,8 @@ class App extends Component {
           <div className="Header">
             <div className="IntroHeader">
               <p className="NameLabel">MONTE THAKKAR</p>
+              <p className="MobileNameLabelFirst">MONTE</p>
+              <p className="MobileNameLabelLast">THAKKAR</p>
               <p className="AboutLabel">Software Engineer. Living in the present.</p>
               <p className="AboutLabelSecond">Dreaming of going to Mars.</p>
             </div>
@@ -35,7 +37,48 @@ class App extends Component {
                 <div className="GridBox">
                   <div className="BoxImage">
                   </div>
-                  <div className="BoxLabel">Side Projects</div>
+                  <div className="BoxLabel">Mobile</div>
+                </div>
+                <div className="GridBox">
+                  <div className="BoxImage">
+                  </div>
+                  <div className="BoxLabel">Web</div>
+                </div>
+                <div className="GridBox">
+                  <div className="BoxImage">
+                  </div>
+                  <div className="BoxLabel">VR</div>
+                </div>
+              </div>
+              <div className="GridRow2">
+                <div className="GridBox">
+                  <div className="BoxImage">
+                  </div>
+                  <div className="BoxLabel">Mobile</div>
+                </div>
+                <div className="GridBox">
+                  <div className="BoxImage">
+                  </div>
+                  <div className="BoxLabel">Web</div>
+                </div>
+              </div>
+              <div className="GridRow2">
+                <div className="GridBox">
+                  <div className="BoxImage">
+                  </div>
+                  <div className="BoxLabel">VR</div>
+                </div>
+                <div className="GridBox">
+                  <div className="BoxImage">
+                  </div>
+                  <div className="BoxLabel">Hardware</div>
+                </div>
+              </div>
+              <div className="GridRow">
+                <div className="GridBox">
+                  <div className="BoxImage">
+                  </div>
+                  <div className="BoxLabel">Hardware</div>
                 </div>
                 <div className="GridBox">
                   <div className="BoxImage">
@@ -45,25 +88,20 @@ class App extends Component {
                 <div className="GridBox">
                   <div className="BoxImage">
                   </div>
-                  <div className="BoxLabel">Open Source Projects</div>
+                  <div className="BoxLabel">Leadership</div>
                 </div>
               </div>
-              <div className="GridRow">
-                <div className="GridBox">
-                  <div className="BoxImage">
-                  </div>
-                  <div className="BoxLabel">Side Projects</div>
+            </div>
+            <div className="GridRow2">
+              <div className="GridBox">
+                <div className="BoxImage">
                 </div>
-                <div className="GridBox">
-                  <div className="BoxImage">
-                  </div>
-                  <div className="BoxLabel">Side Projects</div>
+                <div className="BoxLabel">Mentions</div>
+              </div>
+              <div className="GridBox">
+                <div className="BoxImage">
                 </div>
-                <div className="GridBox">
-                  <div className="BoxImage">
-                  </div>
-                  <div className="BoxLabel">Side Projects</div>
-                </div>
+                <div className="BoxLabel">Leadership</div>
               </div>
             </div>
             <div className="Divider" />
@@ -71,17 +109,17 @@ class App extends Component {
               <p className="BlogPostsLabel">Latest Blog Posts</p>
               <div className="GridContainer">
                 <div className="GridRowBlog">
-                  <div className="GridBox">
+                  <div className="GridRectangle">
                     <div className="RectangleImage">
                     </div>
                     <div className="BoxLabel">Blog Post 1</div>
                   </div>
-                  <div className="GridBox">
+                  <div className="GridRectangle">
                     <div className="RectangleImage">
                     </div>
                     <div className="BoxLabel">Blog Post 2</div>
                   </div>
-                  <div className="GridBox">
+                  <div className="GridRectangle">
                     <div className="RectangleImage">
                     </div>
                     <div className="BoxLabel">Blog Post 3</div>

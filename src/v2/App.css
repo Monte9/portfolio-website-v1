@@ -43,7 +43,7 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .Body {
@@ -79,6 +79,14 @@
   font-weight: bold;
   line-height: 0px;
   letter-spacing: 5px;
+}
+
+.MobileNameLabelFirst {
+  display: none;
+}
+
+.MobileNameLabelLast {
+  display: none;
 }
 
 .NameLabel:hover {
@@ -125,7 +133,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .IntroHello {
@@ -152,8 +159,6 @@
 .GridRow {
   display: flex;
   flex-direction: row;
-  width: 80vw;
-  height: 350px;
   justify-content: space-around;
   align-items: center;
 }
@@ -161,8 +166,6 @@
 .GridRowBlog {
   display: flex;
   flex-direction: row;
-  width: 80vw;
-  height: 280px;
   justify-content: space-around;
   align-items: center;
 }
@@ -170,8 +173,8 @@
 .GridBox {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 340px;
   justify-content: center;
   align-items: center;
 }
@@ -181,6 +184,15 @@
   height: 280px;
   background: linear-gradient(-45deg, rgba(242, 56, 90, 1), #D76D77, #FFAF7B);
   text-align: center;
+}
+
+.GridRectangle {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 280px;
+  justify-content: center;
+  align-items: center;
 }
 
 .RectangleImage {
@@ -199,7 +211,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .BlogPostsLabel {
@@ -210,7 +221,56 @@
   letter-spacing: 1px;
 }
 
-  /* Laptops (smaller window sizes) ----------- */
+.GridRow2 {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .NameLabel {
+    display: none;
+  }
+
+  .MobileNameLabelFirst {
+    display: inline;
+    font-family: 'Penna';
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .MobileNameLabelLast {
+    font-family: 'Penna';
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0px;
+    letter-spacing: 5px;
+    text-align: center;
+    display: inline;
+    margin-top: 5px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .GridRow {
+    display: none;
+  }
+
+  .GridRow2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .GridRowBlog {
+    flex-direction: column;
+  }
+}
+
+/* Laptops (smaller window sizes) ----------- */
 
 @media only screen and (max-width: 750px) {
   .MobileNavBar {
@@ -253,6 +313,17 @@
   .NavHeaderLink {
     margin: 10px;
   }
+
+  .GridRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .GridRow2 {
+    display: none;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
@@ -261,7 +332,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
   }
 
   .MobileDivider {
@@ -308,6 +378,11 @@
 
   .GridRowBlog {
     flex-direction: column;
+    margin-top: -10px;
+  }
+
+  .RectangleImage {
+    height: 220px;
   }
 }
 
