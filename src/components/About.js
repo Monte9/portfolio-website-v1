@@ -35,7 +35,7 @@ export default class About extends Component {
                     alt="Github Logo"
                   />
                 </a>
-                <a href="https://twitter.com/mthakkar_">
+                <a href="mailto:manthan.thakkar@gmail.com?Subject=Hi%20Monte!" target="_top">
                   <img className="Logo"
                     src={GmailLogo}
                     alt="Gmail Logo"
