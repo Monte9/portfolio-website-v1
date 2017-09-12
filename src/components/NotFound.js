@@ -8,7 +8,7 @@ export default class NotFound extends Component {
       <AppContainer>
         <div className="NotFoundContainer">
           <p className="NotFoundLabel">
-            You are too ambitious! 😬 This page doesn't exits yet.
+            You are too ambitious! <span role="img" aria-label="Grimacing">😬</span> This page doesn't exits yet.
           </p>
         </div>
       </AppContainer>

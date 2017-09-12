@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import AppContainer from './AppContainer'
 
@@ -11,7 +10,7 @@ export default class App extends Component {
       <AppContainer>
         <div className="Body">
           <div className="ShortIntro">
-            <p className="IntroHello">Hello world!! <span role="img">💃</span></p>
+            <p className="IntroHello">Hello world!! <span role="img" aria-label="Dancing Woman">💃</span></p>
             <p className="IntroAbout">I'm a Software Engineer currently living in San Francisco. I work full-time at Pillow, a technology-driven hospitality company that helps short-term rentals work for everyone.</p>
             <p className="IntroAbout">In my free time I like to roller skate at the pier, listen to audiobooks and work on side projects. Find out more about me here.</p>
           </div>

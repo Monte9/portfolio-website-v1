@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import AppContainer from './AppContainer'
 
@@ -15,27 +14,34 @@ export default class About extends Component {
       <AppContainer>
         <div className="About">
           <div className="AboutLeftContainer">
-            <div className="ProfileImageContainer">
+            <div className="ProfileImageContainer NoSelection">
               <img
                 className="ProfileImage"
                 src="https://avatars0.githubusercontent.com/u/7840686?v=4&s=460"
+                alt="Monte Thakkar"
               />
             </div>
-            <div className="LogosImageContainer">
+            <div className="LogosImageContainer NoSelection">
               <div className="LogosImageRow">
-                <img
-                  className="Logo"
-                  src={TwitterLogo}
-                />
-                <img
-                  className="Logo"
-                  src={GithubLogo}
-                />
+                <a href="https://twitter.com/mthakkar_">
+                  <img className="Logo"
+                    src={TwitterLogo}
+                    alt="Twitter Logo"
+                  />
+                </a>
+                <a href="https://github.com/Monte9">
+                  <img className="Logo"
+                    src={GithubLogo}
+                    alt="Github Logo"
+                  />
+                </a>
+                <a href="https://twitter.com/mthakkar_">
+                  <img className="Logo"
+                    src={GmailLogo}
+                    alt="Gmail Logo"
+                  />
+                </a>
               </div>
-              <img
-                className="Logo"
-                src={GmailLogo}
-              />
             </div>
           </div>
           <div className="AboutRightContainer">

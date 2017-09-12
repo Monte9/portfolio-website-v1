@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import '../styles/App.css';
 
@@ -9,27 +9,29 @@ export default class AppContainer extends Component {
       <div className="Container">
         <div className="MobileNavBar">
           <NavLink exact activeClassName="NavLinkActive" to="/" className="NavLink">
-            <div className="NavHeaderLink">PORTFOLIO</div>
+            <div className="NavHeaderLink NoSelection">PORTFOLIO</div>
           </NavLink>
           <NavLink activeClassName="NavLinkActive" to="/about" className="NavLink">
-            <div className="NavHeaderLink">ABOUT</div>
+            <div className="NavHeaderLink NoSelection">ABOUT</div>
           </NavLink>
         </div>
         <hr className="MobileDivider" />
         <div className="Header">
           <div className="IntroHeader">
-            <p className="NameLabel">MONTE THAKKAR</p>
-            <p className="MobileNameLabelFirst">MONTE</p>
-            <p className="MobileNameLabelLast">THAKKAR</p>
-            <p className="AboutLabel">Software Engineer. Living in the present.</p>
-            <p className="AboutLabelSecond">Dreaming of going to Mars.</p>
+            <Link to="/" className="NameLink">
+              <p className="NameLabel NoSelection">MONTE THAKKAR</p>
+            </Link>
+            <p className="MobileNameLabelFirst NoSelection">MONTE</p>
+            <p className="MobileNameLabelLast NoSelection">THAKKAR</p>
+            <p className="AboutLabel NoSelection">Software Engineer. Living in the present.</p>
+            <p className="AboutLabelSecond NoSelection">Dreaming of going to Mars.</p>
           </div>
           <div className="NavHeader">
             <NavLink exact activeClassName="NavLinkActive" to="/" className="NavLink">
-              <div className="NavHeaderLink">PORTFOLIO</div>
+              <div className="NavHeaderLink NoSelection">PORTFOLIO</div>
             </NavLink>
             <NavLink activeClassName="NavLinkActive" to="/about" className="NavLink">
-              <p className="NavHeaderLink">ABOUT</p>
+              <p className="NavHeaderLink NoSelection">ABOUT</p>
             </NavLink>
           </div>
         </div>
