@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 import AppContainer from './AppContainer'
-
 import '../styles/App.css';
+
+import BlogTesting from '../images/blog-testing.png'
+import BlogBlockchain from '../images/blog-blockchain.png'
+import BlogBitrise from '../images/blog-bitrise.png'
 
 export default class App extends Component {
   render() {
@@ -92,19 +95,62 @@ export default class App extends Component {
             <div className="GridContainer">
               <div className="GridRowBlog">
                 <div className="GridRectangle">
-                  <div className="RectangleImage">
-                  </div>
-                  <div className="BoxLabel">Blog Post 1</div>
+                  <a href="https://pillow.codes/testing-in-react-native-jest-detox-d7b3b79a166a" className="BlogLink">
+                    <img className="RectangleImage"
+                      src={BlogTesting}
+                      alt="Blog Post - Testing in React Native"
+                    />
+                    <div className="BoxLabel">Testing in React Native - Jest + Detox + Bitrise</div>
+                  </a>
                 </div>
                 <div className="GridRectangle">
-                  <div className="RectangleImage">
-                  </div>
-                  <div className="BoxLabel">Blog Post 2</div>
+                  <a href="https://medium.com/@mthakkar_/blockchain-technology-whats-all-the-hype-about-5f3b3b454163" className="BlogLink">
+                    <img className="RectangleImage"
+                      src={BlogBlockchain}
+                      alt="Blog Post - Blockchain technology"
+                    />
+                    <div className="BoxLabel">Blockchain technology - What’s all the hype about?</div>
+                  </a>
                 </div>
                 <div className="GridRectangle">
-                  <div className="RectangleImage">
-                  </div>
-                  <div className="BoxLabel">Blog Post 3</div>
+                  <a href="https://pillow.codes/bitrise-codepush-react-native-ideal-mobile-ci-setup-6283b86146c" className="BlogLink">
+                    <img className="RectangleImage"
+                      src={BlogBitrise}
+                      alt="Blog Post - Blockchain technology"
+                    />
+                    <div className="BoxLabel">Bitrise + CodePush + React Native = Ideal Mobile CI Setup?</div>
+                  </a>
+                </div>
+              </div>
+              <div className="GridRowBlog2">
+                <div className="GridRectangle">
+                  <a href="https://pillow.codes/testing-in-react-native-jest-detox-d7b3b79a166a" className="BlogLink">
+                    <img className="RectangleImage"
+                      src={BlogTesting}
+                      alt="Blog Post - Testing in React Native"
+                    />
+                    <div className="BoxLabel">Testing in React Native - Jest + Detox + Bitrise</div>
+                  </a>
+                </div>
+                <div className="GridRectangle">
+                  <a href="https://medium.com/@mthakkar_/blockchain-technology-whats-all-the-hype-about-5f3b3b454163" className="BlogLink">
+                    <img className="RectangleImage"
+                      src={BlogBlockchain}
+                      alt="Blog Post - Blockchain technology"
+                    />
+                    <div className="BoxLabel">Blockchain technology - What’s all the hype about?</div>
+                  </a>
+                </div>
+              </div>
+              <div className="GridRowBlog2">
+                <div className="GridRectangle">
+                  <a href="https://pillow.codes/bitrise-codepush-react-native-ideal-mobile-ci-setup-6283b86146c" className="BlogLink">
+                    <img className="RectangleImage"
+                      src={BlogBitrise}
+                      alt="Blog Post - Blockchain technology"
+                    />
+                    <div className="BoxLabel">Bitrise + CodePush + React Native = Ideal Mobile CI Setup?</div>
+                  </a>
                 </div>
               </div>
             </div>

@@ -222,8 +222,8 @@
   flex-direction: column;
   width: 320px;
   height: 280px;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 .RectangleImage {
@@ -236,6 +236,15 @@
 .BoxLabel {
   margin-top: 10px;
   text-align: center;
+}
+
+.BlogLink {
+  text-decoration: none;
+  color:inherit;
+}
+
+.BlogLink:hover {
+  color: rgba(242, 56, 90, 1);
 }
 
 .BlogPosts {
@@ -253,6 +262,10 @@
 }
 
 .GridRow2 {
+  display: none;
+}
+
+.GridRowBlog2 {
   display: none;
 }
 
@@ -369,6 +382,17 @@
   }
 
   .GridRowBlog {
+    display: none;
+  }
+
+  .GridRowBlog2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .GridRowBlog {
     flex-direction: column;
   }
 }
@@ -425,6 +449,17 @@
   }
 
   .GridRow2 {
+    display: none;
+  }
+
+  .GridRowBlog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .GridRowBlog2 {
     display: none;
   }
 
@@ -494,10 +529,6 @@
   .GridRowBlog {
     flex-direction: column;
     margin-top: -10px;
-  }
-
-  .RectangleImage {
-    height: 220px;
   }
 }
 
