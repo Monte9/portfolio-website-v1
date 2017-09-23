@@ -4,7 +4,43 @@ import { NavLink, Link } from 'react-router-dom';
 import '../styles/App.css';
 
 export default class AppContainer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      animationName: '',
+      likes: 0
+    };
+  }
+
+  clickHdl() {
+    let styleSheet = document.styleSheets[0];
+
+    let animationName = `animation${Math.round(Math.random() * 100)}`;
+
+    let keyframes =
+      `@-webkit-keyframes ${animationName} {
+        from { background-position: left; }
+        to { background-position: right; }
+    }`;
+
+    styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+
+    this.setState({
+      animationName: animationName,
+      likes: this.state.likes + 1
+    });
+  }
+
   render() {
+    const { likes } = this.state
+
+    let style = {
+      animationName: this.state.animationName,
+      animationDuration: '0.8s',
+      animationPlayState: 'running',
+      animationTimingFunction: 'steps(28)'
+    };
+
     return (
       <div className="Container">
         <div className="MobileNavBar">
@@ -38,6 +74,10 @@ export default class AppContainer extends Component {
         <div className="Divider" />
         {this.props.children}
         <div className="Divider" />
+        <div className="HeartFeedback">
+          <div className="IntroHello NoSelection">{likes}</div>
+          <div className={likes > 0 ? "HeartSelected" : "Heart"} style={style} onClick={this.clickHdl.bind(this)} />
+        </div>
       </div>
     );
   }

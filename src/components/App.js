@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import AppContainer from './AppContainer'
 import '../styles/App.css';
@@ -14,8 +15,8 @@ export default class App extends Component {
         <div className="Body">
           <div className="ShortIntro">
             <p className="IntroHello">Hello world!! <span role="img" aria-label="Dancing Woman">💃</span></p>
-            <p className="IntroAbout">I'm a Software Engineer currently living in San Francisco. I work full-time at Pillow, a technology-driven hospitality company that helps short-term rentals work for everyone.</p>
-            <p className="IntroAbout">In my free time I like to roller skate at the pier, listen to audiobooks and work on side projects. Find out more about me here.</p>
+            <p className="IntroAbout">I'm a Software Engineer currently living in San Francisco. I work full-time at <a href="https://www.pillow.com/" target="_blank" className="LinkText">Pillow</a>. I enjoy turning ideas into products using React, Rails, Node.js and React Native.</p>
+            <p className="IntroAbout">Currently exploring the Blockchain space, as an investor and a developer. In my free time I like to roller skate at the pier, listen to audiobooks and go outside my comfort zone. Check out some of my latest work on my Github <a href="https://github.com/Monte9" target="_blank" className="LinkText">here</a> or find out more about me <Link to="/about" className="LinkText">here</Link>.</p>
           </div>
           <div className="GridContainer">
             <div className="GridRow">
@@ -152,6 +153,9 @@ export default class App extends Component {
                     <div className="BoxLabel">Bitrise + CodePush + React Native = Ideal Mobile CI Setup?</div>
                   </a>
                 </div>
+              </div>
+              <div className="BlogReadMore">
+                <a href="https://medium.com/@mthakkar_" target="_Blank" className="LinkText">Read more <span role="img" aria-label="Right Arrow">➡️</span></a>
               </div>
             </div>
           </div>
