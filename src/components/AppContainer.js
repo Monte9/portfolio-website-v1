@@ -74,7 +74,7 @@ export default class AppContainer extends Component {
         <div className="Divider" />
         {this.props.children}
         <div className="Divider" />
-        <div className="HeartFeedback">
+        <div className="HeartFeedback NoMobileHighlight">
           <div className="IntroHello NoSelection">{likes}</div>
           <div className={likes > 0 ? "HeartSelected" : "Heart"} style={style} onClick={this.clickHdl.bind(this)} />
         </div>
