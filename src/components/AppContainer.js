@@ -1,22 +1,32 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { NavLink, Link } from 'react-router-dom';
+import { gql, graphql } from 'react-apollo'
 
 import '../styles/App.css';
 
-export default class AppContainer extends Component {
+class AppContainer extends Component {
+  static propTypes = {
+    data: PropTypes.shape({
+      loading: PropTypes.bool,
+      error: PropTypes.object,
+      allLikeses: PropTypes.array
+    }).isRequired,
+    updateLikes: PropTypes.func.isRequired
+  };
+
   constructor(props) {
     super(props);
     this.state = {
       animationName: '',
-      likes: 0
+      likes: 0,
+      dataFetched: false
     };
   }
 
   clickHdl() {
     let styleSheet = document.styleSheets[0];
-
     let animationName = `animation${Math.round(Math.random() * 100)}`;
-
     let keyframes =
       `@-webkit-keyframes ${animationName} {
         from { background-position: left; }
@@ -29,10 +39,22 @@ export default class AppContainer extends Component {
       animationName: animationName,
       likes: this.state.likes + 1
     });
+
+    this.handleUpdate(this.props.data.allLikeses[0])
   }
 
+  handleUpdate = async likes => {
+    await this.props.updateLikes({
+      variables: {
+        id: likes.id,
+        count: this.state.likes + 1
+      }
+    });
+  };
+
   render() {
-    const { likes } = this.state
+    const { likes, dataFetched } = this.state
+    const { loading } = this.props.data
 
     let style = {
       animationName: this.state.animationName,
@@ -40,6 +62,15 @@ export default class AppContainer extends Component {
       animationPlayState: 'running',
       animationTimingFunction: 'steps(28)'
     };
+
+    if (!loading && !dataFetched) {
+      const { allLikeses } = this.props.data
+
+      this.setState({
+        likes: allLikeses[0].count,
+        dataFetched: true
+      });
+    }
 
     return (
       <div className="Container">
@@ -75,10 +106,30 @@ export default class AppContainer extends Component {
         {this.props.children}
         <div className="Divider" />
         <div className="HeartFeedback NoMobileHighlight">
-          <div className="IntroHello NoSelection">{likes}</div>
+          <div className="IntroHello NoSelection">{loading ? "-" : likes}</div>
           <div className={likes > 0 ? "HeartSelected" : "Heart"} style={style} onClick={this.clickHdl.bind(this)} />
         </div>
       </div>
     );
   }
 }
+
+const LikesQuery = gql`query likes {
+  allLikeses {
+    id
+    count
+  }
+}`
+
+const updateLikes = gql`mutation updateLikes($id: ID!, $count: Int!) {
+  updateLikes(id: $id, count: $count) {
+    id
+    count
+  }
+}`
+
+const AppContainerWithLikes = graphql(LikesQuery)(
+  graphql(updateLikes, { name: 'updateLikes' })(AppContainer)
+);
+
+export default AppContainerWithLikes
