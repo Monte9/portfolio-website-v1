@@ -7,7 +7,7 @@ export default class BlogCard extends Component {
     return (
       <div className="GridRectangle">
         <a href={link} className="BlogLink">
-          <img className="RectangleImage"
+          <img className="RectangleImage NoSelection"
             src={imgSrc}
             alt={imgAltText}
           />

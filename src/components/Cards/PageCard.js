@@ -8,7 +8,7 @@ export default class PageCard extends Component {
     return (
       <div className="GridBox">
         <Link to={link} className="GenericLink">
-          <img className="BoxImage"
+          <img className="BoxImage NoSelection"
             src={imageSrc}
             alt={imageAltText}
           />
