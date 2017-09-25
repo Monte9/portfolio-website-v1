@@ -485,6 +485,25 @@
   letter-spacing: 5px;
 }
 
+.MentionsRowLeftContainer {
+  display: flex;
+  flex: 2;
+  height: 400px;
+  justify-content: center;
+}
+
+.MentionsRowRightContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.MentionsImage {
+  width: 595px;
+  height: 335px;
+  border-radius: 2px;
+}
+
 .NotFoundContainer {
   margin-top: 20vh;
   margin-bottom: 20vh;

@@ -21,7 +21,7 @@ export default class About extends Component {
                 alt="Monte Thakkar"
               />
             </div>
-            <div className="LogosImageContainer NoSelection">
+            <div className="LogosImageContainer NoSelection NoMobileHighlight">
               <div className="LogosImageRow">
                 <a href="https://twitter.com/mthakkar_">
                   <img className="Logo"
