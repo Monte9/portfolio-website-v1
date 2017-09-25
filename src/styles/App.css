@@ -504,6 +504,38 @@
   border-radius: 2px;
 }
 
+.QuotesContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.BlockQuote {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+  padding: 0 0 0 1em;
+  border: 1px solid #777;
+  border-width: 0 0 0 1px;
+}
+
+.QuoteText {
+  font-size: 18px;
+  color:gray;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.QuoteAuthor {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
+  color: black;
+}
+
 .NotFoundContainer {
   margin-top: 20vh;
   margin-bottom: 20vh;
