@@ -4,8 +4,6 @@ import AppContainer from '../AppContainer'
 import YoutubePlayer from '../Shared/YoutubePlayer'
 import MentionsLeadershipRow from '../Rows/MentionsLeadershipRow'
 
-import MobileSpaceImage from '../../images/mobilespace.png'
-
 export default class MentionsLeadership extends Component {
   render() {
     return (
@@ -26,7 +24,7 @@ export default class MentionsLeadership extends Component {
         <p className="IntroHello DetailPageTitle">Leadership<span role="img" aria-label="Studio Microphone">🕴️</span></p>
         <div className="DetailGrid">
           <MentionsLeadershipRow
-            imgSrc={<img className="MentionsImage NoSelection" src={MobileSpaceImage} alt="MobileSpace - Weekly meetup in San Francisco" />}
+            imgSrc={<img className="MentionsImage NoSelection" src="" alt="MobileSpace - Weekly meetup in San Francisco" />}
             imgAltText="MobileSpace"
             title="MobileSpace"
             date="August 2016 - Present"
