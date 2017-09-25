@@ -7,6 +7,8 @@ import PageCard from '../Cards/PageCard'
 import ModalCard from '../Cards/ModalCard'
 import BlogCard from '../Cards/BlogCard'
 
+import Pillowcoin from '../Modals/PillowCoin'
+
 import '../../styles/App.css';
 
 import OpenSourceProjects from '../../images/open-source-projects.png'
@@ -23,21 +25,21 @@ export default class App extends Component {
 
     this.state = {
       showModal: false,
-      type: null
+      modal: null
     };
   }
 
-  handleOpenModal(type) {
+  handleOpenModal(modalComponent) {
     this.setState({
       showModal: true,
-      type
+      modal: modalComponent
     });
   }
 
   handleCloseModal() {
     this.setState({
       showModal: false,
-      type: null
+      modal: null
     });
   }
 
@@ -70,7 +72,7 @@ export default class App extends Component {
             </div>
             <div className="GridRow">
               <ModalCard label="Pillowcoin"
-                action={() => this.handleOpenModal('Pillowcoin')}
+                action={() => this.handleOpenModal(<Pillowcoin />)}
               />
               <ModalCard label="Parkmerced.live"
                 action={() => this.handleOpenModal('Parkmerced.live')}
@@ -172,7 +174,7 @@ export default class App extends Component {
           className="Modal"
           overlayClassName="Overlay"
         >
-          <p>{this.state.type}</p>
+          {this.state.modal}
           <div className="CloseIcon" onClick={this.handleCloseModal.bind(this)} />
         </ReactModal>
       </AppContainer>

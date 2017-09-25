@@ -258,6 +258,42 @@
   outline: none !important;
 }
 
+.ModalFrame {
+  position: relative;
+  height: 100%;
+}
+
+.ModalScroll {
+  height: 100%;
+  overflow-x: auto;
+}
+
+.ModalContainer {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.ModalSection {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ModalTitle {
+  font-family: 'Futura-PT-Medium';
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0px;
+}
+
+.ModalTitle2 {
+  font-family: 'Futura-PT-Medium';
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0px;
+}
+
 .CloseIcon {
   position: absolute;
   right: 32px;
