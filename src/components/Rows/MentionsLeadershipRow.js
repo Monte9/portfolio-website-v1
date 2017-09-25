@@ -5,7 +5,8 @@ export default class MentionsLeadershipRow extends Component {
   render() {
     const {
       imgSrc, title, position, date,
-      subtitle, websiteLink
+      subtitle, websiteLink, blog, blogLink,
+      buttonLabel, code, codeLink
     } = this.props
 
     return (
@@ -21,8 +22,20 @@ export default class MentionsLeadershipRow extends Component {
           <div className="DetailButtonContainer">
             <a href={websiteLink} target="_blank" className="LinkText NoSelection"
               rel="noopener noreferrer">
-              <div className="DetailButton">Visit</div>
+              <div className="DetailButton">{buttonLabel || "Visit"}</div>
             </a>
+            {blog &&
+              <a href={blogLink} target="_blank" className="LinkText NoSelection"
+                rel="noopener noreferrer">
+                <div className="DetailButton">Blog</div>
+              </a>
+            }
+            {code &&
+              <a href={codeLink} target="_blank" className="LinkText NoSelection"
+                rel="noopener noreferrer">
+                <div className="DetailButton">Code</div>
+              </a>
+            }
           </div>
         </div>
       </div>
