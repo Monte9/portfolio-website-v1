@@ -15,7 +15,7 @@ export default class OpenSourceRow extends Component {
         <div className="DetailRowRightContainer">
           <p className="OpenSourceTitleLabel">{title}</p>
           <p className="OpenSourceAboutLabel">{stars} <span role="img" aria-label="Shining Star">🌟</span></p>
-          <p className="AboutText">{subtitle}</p>
+          <p className="OpenSourceAboutText">{subtitle}</p>
           <div className="DetailButtonContainer">
             <a href={demoLink} target="_blank" className="LinkText NoSelection"
               rel="noopener noreferrer">

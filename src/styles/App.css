@@ -445,6 +445,12 @@
   margin-bottom: 30px;
 }
 
+.MentionsDetailRow {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
 .DetailRowLeftContainer {
   display: flex;
   flex: 1;
@@ -455,6 +461,7 @@
   display: flex;
   flex-direction: column;
   flex: 1.2;
+  margin-left: 30px;
 }
 
 .OpenSourceImage {
@@ -496,6 +503,11 @@
   transition: .3s ease-in-out;
 }
 
+.OpenSourceAboutText {
+  font-size: 18px;
+  color: gray;
+}
+
 .OpenSourceTitleLabel {
   font-family: 'Futura-PT-Medium';
   font-size: 22px;
@@ -524,7 +536,7 @@
 .MentionsRowLeftContainer {
   display: flex;
   flex: 2;
-  height: 400px;
+  height: 370px;
   justify-content: center;
 }
 
@@ -532,6 +544,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  margin-left: 30px;
 }
 
 .MentionsImage {
@@ -644,6 +657,11 @@
   color:gray;
 }
 
+.MentionsAboutText {
+  font-size: 18px;
+  color:gray;
+}
+
 .HeartFeedback {
   height: 15vh;
   display: flex;
@@ -729,6 +747,15 @@
   .GridRowBlog {
     flex-direction: column;
   }
+
+  .MentionsDetailRow {
+    flex-direction: column;
+  }
+
+  .MentionsRowLeftContainer {
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
 }
 
 /* Laptops (smaller window sizes) ----------- */
@@ -800,7 +827,7 @@
   .BlogReadMore {
     display: flex;
     justify-content: center;
-    aling-items: center;
+    align-items: center;
   }
 
   .About {
@@ -813,6 +840,42 @@
 
   .AboutRightContainer {
     margin-top: 0px;
+  }
+
+  .DetailRow {
+    flex-direction: column;
+  }
+
+  .DetailRowLeftContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .DetailRowRightContainer {
+    flex: 1;
+    margin-left: 0px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .OpenSourceAboutText {
+    text-align: center;
+  }
+
+  .OpenSourceTitleLabel {
+    text-align: center;
+  }
+
+  .MentionsRowRightContainer {
+    align-items: center;
+  }
+
+  .BlockQuote {
+    -webkit-margin-start: 10px;
+    -webkit-margin-end: 10px;
   }
 }
 
@@ -869,6 +932,31 @@
   .GridRowBlog {
     flex-direction: column;
     margin-top: -10px;
+  }
+
+  .MentionsDetailRow {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .MentionsRowLeftContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+
+  .MentionsRowRightContainer {
+    margin-left: 0px;
+    margin-top: -200px;
+  }
+
+  .MentionsImage {
+    width: 300px;
+    height: 168px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import YouTube from 'react-youtube'
 
+const WIDTH = window.innerWidth;
+
 export default class YoutubePlayer extends Component {
   render() {
     const opts = {
-      width: '595',
-      height: '335',
+      width: WIDTH > 750 ? '595' : '300',
+      height: WIDTH > 750 ? '335' : '169',
       playerVars: { // https://developers.google.com/youtube/player_parameters
         controls: 1,
         disablekb: 1,

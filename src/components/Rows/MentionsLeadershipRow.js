@@ -10,7 +10,7 @@ export default class MentionsLeadershipRow extends Component {
     } = this.props
 
     return (
-      <div className="DetailRow PaddingVertical">
+      <div className="MentionsDetailRow PaddingVertical">
         <div className="MentionsRowLeftContainer">
           {imgSrc}
         </div>
@@ -18,7 +18,7 @@ export default class MentionsLeadershipRow extends Component {
           <p className="OpenSourceTitleLabel">{title}</p>
           <p className="OpenSourceAboutLabel">{position}</p>
           <p className="OpenSourceAboutLabel">{date}</p>
-          <p className="AboutText">{subtitle}</p>
+          <p className="MentionsAboutText">{subtitle}</p>
           <div className="DetailButtonContainer">
             <a href={websiteLink} target="_blank" className="LinkText NoSelection"
               rel="noopener noreferrer">
