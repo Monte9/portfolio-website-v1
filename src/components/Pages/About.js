@@ -23,13 +23,13 @@ export default class About extends Component {
             </div>
             <div className="LogosImageContainer NoSelection NoMobileHighlight">
               <div className="LogosImageRow">
-                <a href="https://twitter.com/mthakkar_">
+                <a href="https://twitter.com/mthakkar_" target="_Blank" rel="noopener noreferrer">
                   <img className="Logo"
                     src={TwitterLogo}
                     alt="Twitter Logo"
                   />
                 </a>
-                <a href="https://github.com/Monte9">
+                <a href="https://github.com/Monte9" target="_Blank" rel="noopener noreferrer">
                   <img className="Logo"
                     src={GithubLogo}
                     alt="Github Logo"

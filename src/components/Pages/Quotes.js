@@ -4,6 +4,10 @@ import AppContainer from '../AppContainer'
 import QuoteBlock from '../Shared/QuoteBlock'
 
 export default class Quotes extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <AppContainer>

@@ -8,6 +8,10 @@ import MobileSpace from '../../images/mobilespace.png'
 import ReactNativeRadio from '../../images/react-native-radio.png'
 
 export default class MentionsLeadership extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <AppContainer>
@@ -45,7 +49,7 @@ export default class MentionsLeadership extends Component {
             subtitle="A weekly meetup in San Francisco to enable developers to build their own mobile apps with an excellent in-person community to teach and help accelerate your project to completion."
             websiteLink="http://mobilespace.xyz/"
             blog
-            blogLink="http://mobilespace.xyz/blog/Wrap-up"
+            blogLink="https://medium.com/@mthakkar_/mobilespace-a-passion-story-9dbc8afd5221"
           />
         </div>
       </AppContainer>

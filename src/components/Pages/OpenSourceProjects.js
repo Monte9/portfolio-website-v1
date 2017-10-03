@@ -8,6 +8,10 @@ import ReactNativeRatings from '../../images/react-native-ratings.png'
 import ReactNativeParallaxScrollview from '../../images/react-native-parallax-scrollview.png'
 
 export default class OpenSourceProjects extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <AppContainer>
