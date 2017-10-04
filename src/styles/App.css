@@ -22,6 +22,17 @@
   font-family: 'Proxima-Nova-Regular';
 }
 
+::selection {
+  background: rgba(242, 56, 90, 1);
+  color: white;
+  /* WebKit/Blink Browsers */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(255, 255, 255, 0);
+}
+
 .NoSelection {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -29,12 +40,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-::selection {
-  background: rgba(242, 56, 90, 1);
-  color: white;
-  /* WebKit/Blink Browsers */
 }
 
 .NoMobileHighlight {
@@ -197,6 +202,33 @@
   color:gray;
 }
 
+.TechLinks {
+  font-size: 18px;
+  margin-top: -10px;
+  color:gray;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.TechLinks:hover {
+  color: rgba(242, 56, 90, 1);
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.TechWebsite {
+  font-size: 18px;
+  margin-top: -10px;
+  text-decoration: none;
+  color: rgba(242, 56, 90, 1);
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .DetailPageIntro {
   margin-top: 10px;
 }
@@ -274,8 +306,8 @@
 }
 
 .ModalSection {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .ModalTitle {
@@ -284,6 +316,7 @@
   font-weight: bold;
   color: black;
   letter-spacing: 0px;
+  margin-top: -40px;
 }
 
 .ModalTitle2 {
@@ -296,12 +329,11 @@
 
 .CloseIcon {
   position: absolute;
-  right: 32px;
-  top: 32px;
+  top: 20px;
+  right: 0px;
   width: 32px;
   height: 32px;
   opacity: 0.3;
-  background-color: white;
 }
 
 .CloseIcon:hover {
@@ -324,6 +356,22 @@
 
 .CloseIcon:after {
   transform: rotate(-45deg);
+}
+
+.ModalImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: red;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.ModalImage {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
 }
 
 .GridContainer {
@@ -480,7 +528,7 @@
 }
 
 .DetailButton {
-  width: 43px;
+  width: 60px;
   padding: 12px 22px;
   font-size: 13px;
   letter-spacing: 1px;

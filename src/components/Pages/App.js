@@ -3,18 +3,25 @@ import { Link } from 'react-router-dom';
 import ReactModal from 'react-modal';
 
 import AppContainer from '../AppContainer'
+
+// Cards
 import PageCard from '../Cards/PageCard'
 import ModalCard from '../Cards/ModalCard'
 import BlogCard from '../Cards/BlogCard'
 
-import Pillowcoin from '../Modals/PillowCoin'
+// Modal Pages
+import NatureXplorer from '../Modals/NatureXplorer'
+import ParkMercedLive from '../Modals/ParkMercedLive'
+import SurpriseMe from '../Modals/SurpriseMe'
 
 import '../../styles/App.css';
 
+// Card Images
 import OpenSourceProjects from '../../images/open-source-projects.png'
 import MentionsLeadership from '../../images/mentions-leadership.png'
 import Quotes from '../../images/quotes.png'
 
+// Blog Images
 import BlogTesting from '../../images/blog-testing.png'
 import BlogBlockchain from '../../images/blog-blockchain.png'
 import BlogBitrise from '../../images/blog-bitrise.png'
@@ -71,14 +78,14 @@ export default class App extends Component {
               />
             </div>
             <div className="GridRow">
-              <ModalCard label="Pillowcoin"
-                action={() => this.handleOpenModal(<Pillowcoin />)}
+              <ModalCard label="NatureXplorer"
+                action={() => this.handleOpenModal(<NatureXplorer />)}
               />
               <ModalCard label="Parkmerced.live"
-                action={() => this.handleOpenModal('Parkmerced.live')}
+                action={() => this.handleOpenModal(<ParkMercedLive />)}
               />
               <ModalCard label="Surprise Me"
-                action={() => this.handleOpenModal('Surprise Me')}
+                action={() => this.handleOpenModal(<SurpriseMe />)}
               />
             </div>
             <div className="GridRow2">
@@ -99,16 +106,16 @@ export default class App extends Component {
                 imageAltText="Quotes"
                 label="Quotes"
               />
-              <ModalCard label="Pillowcoin"
-                action={() => this.handleOpenModal('Pillowcoin')}
+              <ModalCard label="NatureXplorer"
+                action={() => this.handleOpenModal(<NatureXplorer />)}
               />
             </div>
             <div className="GridRow2">
               <ModalCard label="Parkmerced.live"
-                action={() => this.handleOpenModal('Parkmerced.live')}
+                action={() => this.handleOpenModal(<ParkMercedLive />)}
               />
               <ModalCard label="Surprise Me"
-                action={() => this.handleOpenModal('Surprise Me')}
+                action={() => this.handleOpenModal(<SurpriseMe />)}
               />
             </div>
           </div>
