@@ -11,7 +11,7 @@ import BlogCard from '../Cards/BlogCard'
 
 // Modal Pages
 import NatureXplorer from '../Modals/NatureXplorer'
-import ParkMercedLive from '../Modals/ParkMercedLive'
+import ParkmercedLive from '../Modals/ParkmercedLive'
 import SurpriseMe from '../Modals/SurpriseMe'
 
 import '../../styles/App.css';
@@ -82,7 +82,7 @@ export default class App extends Component {
                 action={() => this.handleOpenModal(<NatureXplorer />)}
               />
               <ModalCard label="Parkmerced.live"
-                action={() => this.handleOpenModal(<ParkMercedLive />)}
+                action={() => this.handleOpenModal(<ParkmercedLive />)}
               />
               <ModalCard label="Surprise Me"
                 action={() => this.handleOpenModal(<SurpriseMe />)}
@@ -112,7 +112,7 @@ export default class App extends Component {
             </div>
             <div className="GridRow2">
               <ModalCard label="Parkmerced.live"
-                action={() => this.handleOpenModal(<ParkMercedLive />)}
+                action={() => this.handleOpenModal(<ParkmercedLive />)}
               />
               <ModalCard label="Surprise Me"
                 action={() => this.handleOpenModal(<SurpriseMe />)}

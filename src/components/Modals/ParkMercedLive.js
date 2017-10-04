@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 
-import ParkMercedLiveImage from '../../images/park-merced-live.png'
+import ParkmercedLiveImage from '../../images/parkmerced-live.png'
 
-export default class ParkMercedLive extends Component {
+export default class ParkmercedLive extends Component {
   render() {
     return (
       <div className="ModalFrame">
         <div className="ModalScroll">
           <div className="ModalContainer">
-            <p className="ModalTitle">ParkMerced.Live</p>
+            <p className="ModalTitle">Parkmerced.live</p>
             <p className="IntroAbout">19th Ave & Karl The Fog - SF Live Stream</p>
             <div className="ModalImageContainer">
-              <img className="ModalImage NoSelection" src={ParkMercedLiveImage} alt="React Native Radio" />
+              <img className="ModalImage NoSelection" src={ParkmercedLiveImage} alt="React Native Radio" />
             </div>
             <div className="ModalSection">
               <p className="ModalTitle2">Motivation</p>
-              <p className="IntroAbout">My apartment is on the 12th floor in Park Merced overlooking 19th Ave. The view is not bad, so I setup my RPi to live stream the view 24/7.</p>
+              <p className="IntroAbout">My apartment is on the 12th floor in Parkmerced overlooking 19th Ave. The view is not bad, so I setup my RPi to live stream the view 24/7.</p>
             </div>
             <div className="ModalSection">
               <p className="ModalTitle2">Technologies</p>
@@ -32,7 +32,7 @@ export default class ParkMercedLive extends Component {
                 <p className="TechLinks">• News API</p>
               </a>
               <a href="https://blog.alexellis.io/live-stream-with-docker/" target="_blank" className="LinkText" rel="noopener noreferrer">
-                <p className="TechLinks">• Docker Image (To livestream to Youtube)</p>
+                <p className="TechLinks">• Docker Image (to livestream to Youtube)</p>
               </a>
               <a href="https://blog.alexellis.io/live-stream-with-docker/" target="_blank" className="LinkText" rel="noopener noreferrer">
                 <p className="TechLinks">• React Youtube</p>
