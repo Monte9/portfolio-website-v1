@@ -404,10 +404,13 @@
   margin-bottom: 10px;
 }
 
+.GridBox:hover {
+  cursor: pointer;
+}
+
 .BoxImage {
   width: 280px;
   height: 280px;
-  background: linear-gradient(-45deg, rgba(242, 56, 90, 1), #D76D77, #FFAF7B);
   text-align: center;
 }
 
