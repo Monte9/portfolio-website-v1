@@ -710,6 +710,11 @@
   color:gray;
 }
 
+.Bold {
+  font-weight: bold;
+  color: black;
+}
+
 .MentionsAboutText {
   font-size: 18px;
   color:gray;

@@ -7,6 +7,8 @@ export default class ModalCard extends Component {
     this.state = {
       hover: false
     }
+
+    this.toggleHover = this.toggleHover.bind(this)
   }
 
   componentWillMount() {
@@ -40,7 +42,7 @@ export default class ModalCard extends Component {
 
   render() {
     const { action, label } = this.props
-    const { hover, randomGradient } = this.state
+    const { randomGradient } = this.state
     const linkStyle = {
       background: `linear-gradient(145deg, ${randomGradient.primary}, ${randomGradient.secondary})`
     }
@@ -49,7 +51,7 @@ export default class ModalCard extends Component {
       <div className="GridBox" onClick={action}>
         <div className="BoxImage"
           style={linkStyle}
-          onMouseEnter={this.toggleHover.bind(this)}
+          onMouseEnter={this.toggleHover}
         />
         <div className="BoxLabel">{label}</div>
       </div>
