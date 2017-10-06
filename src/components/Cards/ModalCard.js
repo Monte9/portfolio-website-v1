@@ -1,23 +1,36 @@
 import React, { Component } from 'react';
 
-import { GRADIENTS } from '../Shared/Constants'
-
 export default class ModalCard extends Component {
   constructor() {
     super()
 
     this.state = {
-      hover: false,
-      randomGradient: {
-        primary: '#D76D77',
-        secondary: '#FFAF7B'
-      }
+      hover: false
     }
   }
 
+  componentWillMount() {
+    const { gradientColors } = this.props
+
+    this.setState({
+      randomGradient: {
+        primary: gradientColors[0].primary,
+        secondary: gradientColors[0].secondary
+      }
+    })
+  }
+
+  generateRandomNumber(gradientColors) {
+    return Math.floor(Math.random() * gradientColors.length);
+  }
+
   toggleHover() {
-    const randomNumber = Math.floor(Math.random() * GRADIENTS.length);
-    const randomGradient = GRADIENTS[randomNumber]
+    const { gradientColors } = this.props
+    let randomGradient = gradientColors[this.generateRandomNumber(gradientColors)]
+
+    while (this.state.randomGradient.primary === randomGradient.primary) {
+      randomGradient = gradientColors[this.generateRandomNumber(gradientColors)]
+    }
 
     this.setState({
       hover: !this.state.hover,

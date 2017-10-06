@@ -26,6 +26,9 @@ import BlogTesting from '../../images/blog-testing.png'
 import BlogBlockchain from '../../images/blog-blockchain.png'
 import BlogBitrise from '../../images/blog-bitrise.png'
 
+// GRADIENT COLORS
+import { GRADIENT_COLORS_1, GRADIENT_COLORS_2, GRADIENT_COLORS_3 } from '../Shared/Constants'
+
 export default class App extends Component {
   constructor() {
     super();
@@ -79,12 +82,15 @@ export default class App extends Component {
             </div>
             <div className="GridRow">
               <ModalCard label="NatureXplorer"
+                gradientColors={GRADIENT_COLORS_1}
                 action={() => this.handleOpenModal(<NatureXplorer />)}
               />
               <ModalCard label="Parkmerced.live"
+                gradientColors={GRADIENT_COLORS_2}
                 action={() => this.handleOpenModal(<ParkmercedLive />)}
               />
               <ModalCard label="Surprise Me"
+                gradientColors={GRADIENT_COLORS_3}
                 action={() => this.handleOpenModal(<SurpriseMe />)}
               />
             </div>
@@ -107,14 +113,17 @@ export default class App extends Component {
                 label="Quotes"
               />
               <ModalCard label="NatureXplorer"
+                gradientColors={GRADIENT_COLORS_1}
                 action={() => this.handleOpenModal(<NatureXplorer />)}
               />
             </div>
             <div className="GridRow2">
               <ModalCard label="Parkmerced.live"
+                gradientColors={GRADIENT_COLORS_2}
                 action={() => this.handleOpenModal(<ParkmercedLive />)}
               />
               <ModalCard label="Surprise Me"
+                gradientColors={GRADIENT_COLORS_3}
                 action={() => this.handleOpenModal(<SurpriseMe />)}
               />
             </div>
