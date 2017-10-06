@@ -1,7 +1,7 @@
 export const GRADIENT_COLORS_1 = [
   {
-    primary: '#D76D77',
-    secondary: '#FFAF7B'
+    primary: '#ee0979',
+    secondary: '#ff6a00'
   },
   {
     primary: '#34e89e',
@@ -112,9 +112,5 @@ export const GRADIENT_COLORS_3 = [
   {
     primary: '#33001b',
     secondary: '#ff0084'
-  },
-  {
-    primary: '#232526',
-    secondary: '#414345'
   }
 ]

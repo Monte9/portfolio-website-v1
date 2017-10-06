@@ -433,6 +433,8 @@
 .BoxLabel {
   margin-top: 10px;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .BlogLink {
@@ -1004,8 +1006,8 @@
   }
 
   .MentionsImage {
-    width: 300px;
-    height: 168px;
+    width: auto;
+    height: 180px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
