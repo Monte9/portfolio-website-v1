@@ -15,7 +15,7 @@ export default class ParkmercedLive extends Component {
             </div>
             <div className="ModalSection">
               <p className="ModalTitle2">Motivation</p>
-              <p className="IntroAbout">My apartment is on the 12th floor in Parkmerced overlooking 19th Ave. The view is not bad, so I setup my RPi to live stream the view 24/7.</p>
+              <p className="IntroAbout">I recently moved into an apartment on the 12th floor in Park Merced. My room overlooks 19th Ave and so I decided to setup my RPi to live stream the view 24/7.</p>
             </div>
             <div className="ModalSection">
               <p className="ModalTitle2">Technologies</p>

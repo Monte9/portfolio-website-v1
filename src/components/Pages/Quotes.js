@@ -12,7 +12,7 @@ export default class Quotes extends Component {
     return (
       <AppContainer>
         <div className="ShortIntro">
-          <p className="IntroAbout DetailPageIntro">I Think. And that's my superpower.</p>
+          <p className="IntroAbout DetailPageIntro">I Think! ..and that's my superpower.</p>
           <p className="IntroHello DetailPageTitle">Quotes <span role="img" aria-label="Package">💭</span></p>
         </div>
         <QuoteBlock

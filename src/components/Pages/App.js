@@ -60,7 +60,7 @@ export default class App extends Component {
           <div className="ShortIntro">
             <p className="IntroHello">Hello world!! <span role="img" aria-label="Dancing Woman">💃</span></p>
             <p className="IntroAbout">I'm a Software Engineer currently living in San Francisco. I work full-time at <a href="https://www.pillow.com/" className="LinkText" target="_blank" rel="noopener noreferrer">Pillow</a>. I enjoy turning ideas into products using React, Rails, Node.js and React Native.</p>
-            <p className="IntroAbout">Currently exploring the Blockchain space, as an investor and a developer. In my free time I like to roller skate at the pier, listen to audiobooks and go outside my comfort zone. Check out some of my latest work on my Github <a href="https://github.com/Monte9" target="_blank" className="LinkText" rel="noopener noreferrer">here</a> or find out more about me <Link to="/about" className="LinkText">here</Link>.</p>
+            <p className="IntroAbout">Currently exploring the Blockchain space, as an investor and developer. In my free time I like to roller skate at the pier, listen to audiobooks and rewatch some of my favorite movies. Check out my latest work on Github <a href="https://github.com/Monte9" target="_blank" className="LinkText" rel="noopener noreferrer">here</a> or find out more about me <Link to="/about" className="LinkText">here</Link>.</p>
           </div>
           <div className="GridContainer">
             <div className="GridRow">

@@ -23,7 +23,7 @@ export default class OpenSourceProjects extends Component {
           <OpenSourceRow imgSrc={ReactNativeElements}
             imgAltText="React Native Elements"
             title="React Native Elements"
-            stars="7145"
+            stars="7328"
             subtitle="Cross Platform React Native UI Toolkit by Nader Dabit & Monte Thakkar"
             demoLink="https://expo.io/@monte9/react-native-elements-app"
             codeLink="https://github.com/react-native-training/react-native-elements"
@@ -32,7 +32,7 @@ export default class OpenSourceProjects extends Component {
           <OpenSourceRow imgSrc={ReactNativeRatings}
             imgAltText="React Native Ratings"
             title="React Native Ratings"
-            stars="181"
+            stars="180"
             subtitle="An extendable Rating's components for React Native with gestures and an intuitive API"
             demoLink="https://github.com/Monte9/react-native-ratings#demo"
             codeLink="https://github.com/Monte9/react-native-ratings"

@@ -16,7 +16,7 @@ export default class MentionsLeadership extends Component {
     return (
       <AppContainer>
         <div className="ShortIntro">
-          <p className="IntroAbout DetailPageIntro">I try to put myself out there, to share and learn.</p>
+          <p className="IntroAbout DetailPageIntro">I try to put myself out there; listen, learn and share.</p>
           <p className="IntroHello DetailPageTitle">Mentions<span role="img" aria-label="Studio Microphone">🎙️</span></p>
         </div>
         <div className="DetailGrid">
