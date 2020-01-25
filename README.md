@@ -1,4 +1,4 @@
-## Monte Thakkar - OG Website
+## Monte Thakkar - Website v1
 
 First production-ready React project. 
 
